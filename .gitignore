@@ -1,0 +1,40 @@
+# Secrets and configuration files
+.env
+.env.local
+.env.*.local
+secrets.json
+config.json
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Node modules
+node_modules/
+package-lock.json
+yarn.lock
+
+# Build output
+dist/
+build/
+out/
+
+# Firebase cache
+.firebase/
+
+# OS specific files
+Thumbs.db
+.Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# Temporary files
+*.tmp
+*.bak

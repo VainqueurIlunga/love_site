@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Une déclaration d'amour romantique et mémorable">
+    <title>💕 Veux-tu être la personne spéciale de ma vie ?</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <!-- Curseur personnalisé -->
+    <div id="customCursor"></div>
+
+    <!-- Fond animé avec pétales -->
+    <div class="animated-background">
+        <div class="petals-container"></div>
+        <div class="floating-hearts"></div>
+    </div>
+
+    <!-- Lecteur musique (discret) -->
+    <div class="music-player">
+        <div class="player-content">
+            <button id="playBtn" class="music-btn">
+                <span class="music-icon">♫</span>
+            </button>
+            <audio id="bgMusic" loop>
+                <!-- Ajouter votre URL de musique romantique -->
+                <source src="amoureux.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+
+    <!-- SECTION 1 : Écran d'accueil -->
+    <section id="welcome" class="section hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">J'ai quelque chose<br>d'important à te dire...</h1>
+                <div class="heart-pulse">❤️</div>
+            </div>
+            <button class="btn btn-primary" onclick="scrollToSection('story')">
+                Découvrir ❤️
+            </button>
+        </div>
+    </section>
+
+    <!-- SECTION 2 : Notre Histoire (Timeline) -->
+    <section id="story" class="section timeline-section">
+        <div class="section-header">
+            <h2>Notre Histoire</h2>
+            <div class="header-line"></div>
+        </div>
+        
+        <div class="timeline">
+            <div class="timeline-item" data-aos="fade-up">
+                <div class="timeline-marker">
+                    <span class="timeline-icon">🌟</span>
+                </div>
+                <div class="timeline-content">
+                    <h3>Notre Rencontre</h3>
+                    <p>Le moment où tout a commencé. Rien n'a ete prevue de la sorte, mais c'est devenue un instant magique qui a changé ma vie.</p>
+                    <span class="timeline-date">Le jour où tu es entrée dans ma vie</span>
+                </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-up">
+                <div class="timeline-marker">
+                    <span class="timeline-icon">💬</span>
+                </div>
+                <div class="timeline-content">
+                    <h3>Nos Premiers Échanges</h3>
+                    <p>Chaque message, chaque rire partagé a renforcé mes sentiments.</p>
+                    <span class="timeline-date">Les conversations inoubliables</span>
+                </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-up">
+                <div class="timeline-marker">
+                    <span class="timeline-icon">✨</span>
+                </div>
+                <div class="timeline-content">
+                    <h3>Nos Souvenirs</h3>
+                    <p>Les moments partagés, appels, messages ou en presentiel que je cheris et que j'aimerais revivre chaque jour.</p>
+                    <span class="timeline-date">Les instants précieux</span>
+                </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-up">
+                <div class="timeline-marker">
+                    <span class="timeline-icon">💖</span>
+                </div>
+                <div class="timeline-content">
+                    <h3>Les Moments Importants</h3>
+                    <p>Chaque instant avec toi est important et significatif pour moi.</p>
+                    <span class="timeline-date">Aujourd'hui</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3 : Galerie Photo -->
+    <section id="gallery" class="section gallery-section">
+        <div class="section-header">
+            <h2>Nos Photos</h2>
+            <div class="header-line"></div>
+        </div>
+
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="santa1.jpeg" alt="Toi - Photo 1">
+                <div class="gallery-overlay">Tu es mignnone 💕</div>
+            </div>
+            <div class="gallery-item">
+                <img src="santa2.jpeg" alt="Toi - Photo 2">
+                <div class="gallery-overlay">Tu est intelligente🌹</div>
+            </div>
+            <div class="gallery-item">
+                <img src="santa2.jpeg" alt="Toi - Photo 3">
+                <div class="gallery-overlay">avec du charisme</div>
+            </div>
+            <div class="gallery-item">
+                <img src="santa1.jpeg" alt="Toi - Photo 4">
+                <div class="gallery-overlay">Pour toujours ❤️</div>
+            </div>
+        </div>
+
+        <div class="gallery-instruction">
+            ✨ Nos plus beaux moments ensemble ✨
+        </div>
+    </section>
+
+    <!-- SECTION 4 : Citations Romantiques -->
+    <section id="quotes" class="section quotes-section">
+        <div class="section-header">
+            <h2>Paroles de l'Amour</h2>
+            <div class="header-line"></div>
+        </div>
+
+        <div class="quotes-container">
+            <div class="quote-card">
+                <p class="quote-text" data-text="Chaque histoire d'amour est belle, mais la nôtre est ma préférée."></p>
+            </div>
+            <div class="quote-card">
+                <p class="quote-text" data-text="Certaines personnes entrent dans notre vie et changent tout."></p>
+            </div>
+            <div class="quote-card">
+                <p class="quote-text" data-text="Avec toi, j'ai trouvé un amour que je ne savais pas exister."></p>
+            </div>
+            <div class="quote-card">
+                <p class="quote-text" data-text="Tu es mon ciel, mon soleil et ma raison d'être heureux."></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5 : Lettre d'Amour -->
+    <section id="letter" class="section letter-section">
+        <div class="section-header">
+            <h2>Une Lettre Pour Toi</h2>
+            <div class="header-line"></div>
+        </div>
+
+        <div class="letter-container">
+            <div class="letter-paper">
+                <div class="letter-content">
+                    <div class="letter-text">
+                        <p class="letter-line">Chère Santa,</p>
+                        <p class="letter-line">Je t'écris aujourd'hui pour te dire ce que mon cœur ressent depuis un certain moment.</p>
+                        <p class="letter-line">Tu as apporté de la lumière, de la joie et du sens à mes jours. Chaque moment avec toi est précieux et mémorable ainsi qu'instructif.</p>
+                        <p class="letter-line">Tes sourires me font oublier tous mes soucis, et ton amitié me fait devenir une meilleure personne.</p>
+                        <p class="letter-line">Je souhaite construire un avenir magnifique avec toi, rempli de moments heureux, de rires et d'amour sincère.</p>
+                        <p class="letter-line">Avec tout mon amour,</p>
+                        <p class="letter-signature">Celui qui t'aime ❤️</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6 : Bouquet de Fleurs -->
+    <section id="flowers" class="section flowers-section">
+        <div class="section-header">
+            <h2>Un Bouquet Pour Toi</h2>
+            <div class="header-line"></div>
+        </div>
+
+        <div class="bouquet-container">
+            <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=500&h=600&fit=crop" alt="Bouquet de Roses Rouges" class="bouquet-image">
+        </img>
+
+        <p class="flowers-text">Ces fleurs symbolisent mon amour pour toi ❤️</p>
+    </section>
+
+    <!-- SECTION 7 : Compte à Rebours -->
+    <section id="countdown" class="section countdown-section">
+        <div class="section-header">
+            <h2>Temps Spécial</h2>
+            <div class="header-line"></div>
+        </div>
+
+        <div class="countdown-container">
+            <div class="countdown-label">Jusqu'à une date importante...</div>
+            <div class="countdown-timer">
+                <div class="countdown-item">
+                    <div class="countdown-number" id="days">00</div>
+                    <div class="countdown-label-small">Jours</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="hours">00</div>
+                    <div class="countdown-label-small">Heures</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="minutes">00</div>
+                    <div class="countdown-label-small">Minutes</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="seconds">00</div>
+                    <div class="countdown-label-small">Secondes</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 8 : La Grande Demande -->
+    <section id="proposal" class="section proposal-section">
+        <div class="proposal-background">
+            <div class="particles"></div>
+        </div>
+
+        <div class="proposal-content">
+            <div class="proposal-text-container">
+                <p class="proposal-intro">Depuis quelque temps, tu occupes une place particulière dans mon cœur.</p>
+                <p class="proposal-intro">Chaque sourire, chaque conversation et chaque moment partagé comptent énormément pour moi.</p>
+                <p class="proposal-intro">Aujourd'hui, j'aimerais te poser une question importante...</p>
+            </div>
+
+            <h1 class="proposal-question">Veux-tu être la personne spéciale dans ma vie et me donner ton coeur?❤️</h1>
+
+            <div class="proposal-buttons">
+                <button class="btn btn-yes" id="yesBtn">❤️ Oui</button>
+                <button class="btn btn-no" id="noBtn">💔 Non</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal de Succès -->
+    <div id="successModal" class="modal hidden">
+        <div class="modal-content success-modal">
+            <div class="modal-header">
+                <h2>✨ Tu viens de faire de moi la personne la plus heureuse du monde ❤️ ✨</h2>
+            </div>
+            <div class="celebration-animation">
+                <div class="hearts-burst"></div>
+            </div>
+            <p class="success-message">Bienvenue dans ma vie !</p>
+            <button class="btn btn-primary" onclick="closeModal()">Fermer</button>
+        </div>
+    </div>
+
+    <!-- Modal de Certificat -->
+    <div id="certificateModal" class="modal hidden">
+        <div class="modal-content certificate-modal">
+            <div class="certificate">
+                <div class="certificate-header">
+                    <h2>Certificat Officiel</h2>
+                </div>
+                <div class="certificate-body">
+                    <p class="certificate-text">Ceci certifie que</p>
+                    <h3 id="coupleNames">Nous sommes Officiellement en Couple ❤️</h3>
+                    <p class="certificate-text">À partir de ce jour</p>
+                    <p id="certificateDate" class="certificate-date"></p>
+                    <div class="certificate-signature">
+                        <p>Avec Amour et Sincérité</p>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-primary" onclick="downloadCertificate()">Télécharger le Certificat</button>
+            <button class="btn btn-secondary" onclick="closeModal()">Fermer</button>
+        </div>
+    </div>
+
+    <!-- Modal de Refus -->
+    <div id="refusalModal" class="modal hidden">
+        <div class="modal-content refusal-modal">
+            <div class="modal-header">
+                <h2>❤️ Je respecte ton choix ❤️</h2>
+            </div>
+            <p class="refusal-message">Merci d'avoir pris le temps de réfléchir.</p>
+            <p class="refusal-message">L'amitié est aussi précieuse que l'amour.</p>
+            <button class="btn btn-primary" onclick="closeModal()">D'accord</button>
+        </div>
+    </div>
+
+    <!-- Confettis -->
+    <div id="confetti-container"></div>
+
+    <!-- Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
